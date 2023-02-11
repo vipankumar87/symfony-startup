@@ -11,6 +11,9 @@ Install the dependencies and devDependencies and start the server.
 cd Project
 composer require
 npm install && npm run dev
+php bin/console doctrine:migrations:migrate
+php bin/console doctrine:fixtures:load     
+
 symfony serve
 ```
 
